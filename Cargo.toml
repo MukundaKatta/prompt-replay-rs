@@ -1,0 +1,13 @@
+[package]
+name = "prompt-replay"
+version = "0.1.0"
+edition = "2021"
+description = "Record and replay LLM prompts for A/B testing and model swaps"
+license = "MIT"
+repository = "https://github.com/MukundaKatta/prompt-replay-rs"
+keywords = ["llm", "replay", "testing", "prompt", "ab-test"]
+categories = ["development-tools::testing"]
+exclude = ["target/*", ".github/*", "*.log"]
+
+[dependencies]
+serde_json = "1"
