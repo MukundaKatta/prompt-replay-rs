@@ -139,7 +139,8 @@ fn text_similarity(a: &str, b: &str) -> f64 {
 fn json_diff_paths(a: &Value, b: &Value, path: &str, diffs: &mut Vec<String>) {
     match (a, b) {
         (Value::Object(ma), Value::Object(mb)) => {
-            let mut all_keys: std::collections::BTreeSet<&String> = std::collections::BTreeSet::new();
+            let mut all_keys: std::collections::BTreeSet<&String> =
+                std::collections::BTreeSet::new();
             all_keys.extend(ma.keys());
             all_keys.extend(mb.keys());
             for k in all_keys {
